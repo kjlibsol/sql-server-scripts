@@ -17,3 +17,8 @@ Backup all databases on server to a folder on the server.
 ## [Show the size of all tables](https://github.com/kjlibsol/sql-server-scripts/blob/master/TableSizes.sql)
 
 Showing table sizes in SQL Server Management Studio does not always work with Azure. This script gets the job done no matter what.
+
+## [Hangfire Cleanup](https://github.com/kjlibsol/sql-server-scripts/blob/master/CleanupHangfire.sql)
+
+Cleans up all tables related to a hangfire instance
+
