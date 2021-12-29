@@ -1,5 +1,6 @@
 SELECT
-    a2.name AS TableName,
+    a3.name AS SchemaName,
+	a2.name AS TableName,
     a1.rows as [RowCount],
     CAST(ROUND(((a1.reserved + ISNULL(a4.reserved,0)) * 8) / 1024.00, 2) AS NUMERIC(36, 2)) AS ReservedSize_MB,
     CAST(ROUND(a1.data * 8 / 1024.00, 2) AS NUMERIC(36, 2)) AS DataSize_MB,
