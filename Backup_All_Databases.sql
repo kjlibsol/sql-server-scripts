@@ -8,6 +8,8 @@ SET @path = 'C:\SuperImportantBackups\'
  
 -- specify filename format
 SELECT @fileDate = CONVERT(VARCHAR(20),GETDATE(),112) 
+-- Include time in filename
+-- SELECT @fileDate = CONVERT(VARCHAR(20),GETDATE(),112) + '_' + REPLACE(CONVERT(VARCHAR(20), GETDATE(),108),':','') 
  
 DECLARE db_cursor CURSOR READ_ONLY FOR  
 SELECT name 
